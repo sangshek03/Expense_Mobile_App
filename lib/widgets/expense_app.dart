@@ -1,6 +1,6 @@
 import 'package:expense_tracker_app/widgets/expenses_list/expense_list.dart';
 import 'package:flutter/material.dart';
-import 'package:expense_tracker_app/modules/expense.dart';
+import 'package:expense_tracker_app/models/expense.dart';
 import 'package:expense_tracker_app/widgets/add_items.dart';
 
 class Expenses extends StatefulWidget {
@@ -81,7 +81,9 @@ class _ExpenseState extends State<Expenses> {
           IconButton(onPressed: onAdditem, icon: const Icon(Icons.add)),
         ],
       ),
+      
       body: Column(children: [
+        const SizedBox(height: 10,),
         Expanded(child: mainList),
       ]),
     );
