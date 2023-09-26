@@ -8,6 +8,8 @@ Welcome to the Expense Tracker App repository! This Flutter app allows you to ke
 - **Delete Expense:** Swipe left on an expense item to delete it.
 - **Undo Option:** If you accidentally delete an expense, you can undo the action.
 - **Error Messages:** Get notified with error messages when you enter invalid expense details.
+- **Dark Mode:** You can also run your app in Dark Mode.
+- **Bar Chart:** Track Your Expense with the help of Chart Bar.
 
 ## Getting Started
 
