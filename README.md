@@ -2,6 +2,13 @@
 
 Welcome to the Expense Tracker App repository! This Flutter app allows you to keep track of your expenses easily. You can add new expenses, delete them with a simple swipe, and even undo accidental deletions. The app also provides error messages to alert you when entering invalid expense details.
 
+## Images
+
+<img src="https://github.com/sangshek03/Expense_Mobile_App/assets/110192004/0876196c-490c-46b8-92e8-c0c32739f7e4" width="200">
+<img src="https://github.com/sangshek03/Expense_Mobile_App/assets/110192004/cb22b0a8-6e69-4655-ab20-25d7f2ee5396" width="200">
+<img src="https://github.com/sangshek03/Expense_Mobile_App/assets/110192004/af5eb14a-b8a4-452d-8753-296c900a9517" width="200">
+<img src="https://github.com/sangshek03/Expense_Mobile_App/assets/110192004/a22e992f-3352-4d9e-a862-7c2afd887616" width="200">
+
 ## Features
 
 - **Add Expense:** Add a new expense with a title, date, and amount.
