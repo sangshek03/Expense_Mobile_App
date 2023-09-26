@@ -1,3 +1,5 @@
+import 'package:expense_tracker_app/widgets/chart/chart.dart';
+// import 'package:expense_tracker_app/widgets/chart/chart_bar.dart';
 import 'package:expense_tracker_app/widgets/expenses_list/expense_list.dart';
 import 'package:flutter/material.dart';
 import 'package:expense_tracker_app/models/expense.dart';
@@ -25,6 +27,21 @@ class _ExpenseState extends State<Expenses> {
         cost: 6700,
         dateTime: DateTime.now(),
         category: Category.travel),
+    Expense(
+        title: 'Buger Party',
+        cost: 3420,
+        dateTime: DateTime.now(),
+        category: Category.food),
+    Expense(
+        title: 'House Rent',
+        cost: 7000,
+        dateTime: DateTime.now(),
+        category: Category.rent),
+    Expense(
+        title: 'Given Friend',
+        cost: 5030,
+        dateTime: DateTime.now(),
+        category: Category.miscellaneous),
   ];
 
   void onAdditem() {
@@ -81,9 +98,11 @@ class _ExpenseState extends State<Expenses> {
           IconButton(onPressed: onAdditem, icon: const Icon(Icons.add)),
         ],
       ),
-      
       body: Column(children: [
-        const SizedBox(height: 10,),
+        const SizedBox(
+          height: 10,
+        ),
+        Chart(expenses: list),
         Expanded(child: mainList),
       ]),
     );

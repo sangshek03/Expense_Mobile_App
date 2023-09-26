@@ -24,6 +24,7 @@ void main() {
             style: ElevatedButton.styleFrom(
                 backgroundColor: kDarkColorScheme.secondaryContainer)),
       ),//darkTheme
+      
       theme: ThemeData().copyWith(
         useMaterial3: true,
         colorScheme: kColorScheme,
