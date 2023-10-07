@@ -80,6 +80,9 @@ class _ExpenseState extends State<Expenses> {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    // print('width + $width');
+
     Widget mainList = const Center(
       child: Text('No Expense are here, Add your expenses.'),
     );
@@ -92,19 +95,28 @@ class _ExpenseState extends State<Expenses> {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Expense Tracker App'),
-        actions: [
-          IconButton(onPressed: onAdditem, icon: const Icon(Icons.add)),
-        ],
-      ),
-      body: Column(children: [
-        const SizedBox(
-          height: 10,
+        appBar: AppBar(
+          title: const Text('Expense Tracker App'),
+          actions: [
+            IconButton(onPressed: onAdditem, icon: const Icon(Icons.add)),
+          ],
         ),
-        Chart(expenses: list),
-        Expanded(child: mainList),
-      ]),
-    );
+        body: width < 500
+            ? Column(children: [
+                const SizedBox(
+                  height: 10,
+                ),
+                Chart(expenses: list),
+                Expanded(child: mainList),
+              ])
+            : Row(children: [
+                const SizedBox(
+                  height: 10,
+                ),
+                Expanded(
+                  child: Chart(expenses: list),
+                ),
+                Expanded(child: mainList),
+              ]));
   }
 }
